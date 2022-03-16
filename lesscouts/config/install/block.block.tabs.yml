@@ -1,0 +1,22 @@
+uuid: 17f92f29-1b6d-43d7-b1ac-4a958320031d
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - lesscouts
+_core:
+  default_config_hash: Tgb9csFDs4DaoVN-dFc18blZfiPT6Abn_dma3taMRes
+id: tabs
+theme: lesscouts
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

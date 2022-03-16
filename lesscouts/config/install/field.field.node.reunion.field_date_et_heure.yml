@@ -1,0 +1,23 @@
+uuid: 8604b4d7-2814-45cb-bb48-bc3754fd8514
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_et_heure
+    - node.type.reunion
+  module:
+    - datetime
+_core:
+  default_config_hash: E9NBP9e9Bdd-dR1np-73vBfP94op9fFYixnwOSi4Kp8
+id: node.reunion.field_date_et_heure
+field_name: field_date_et_heure
+entity_type: node
+bundle: reunion
+label: 'Date et heure'
+description: 'Date et heure de début de l''activité'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

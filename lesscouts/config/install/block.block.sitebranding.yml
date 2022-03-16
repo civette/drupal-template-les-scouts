@@ -1,0 +1,25 @@
+uuid: b0b5474f-fc54-43ee-9c51-445ea6676c7a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lesscouts
+_core:
+  default_config_hash: Q2vc8m_ZA8ndUDAP9jFo6vw8iE6ITZ-PrnH7pJiDmfY
+id: sitebranding
+theme: lesscouts
+region: highlighted
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

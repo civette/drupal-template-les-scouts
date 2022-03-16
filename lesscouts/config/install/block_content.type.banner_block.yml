@@ -1,0 +1,10 @@
+uuid: c9607d80-ba57-44a0-9b83-8ea6221c5781
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: gSQTJlrJvr4P99b29S46Hb7Ls-lqvdkr4AijJpnrJEc
+id: banner_block
+label: 'Banner block'
+revision: 0
+description: 'Bloc "banner edge to edge" à placer dans la région "Banner". Surimpression du texte sur l''image'

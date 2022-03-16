@@ -1,0 +1,7 @@
+<div class="banner banner--{{elements['#id']}}">
+	<div class="banner__bg" style="background: url('{{ file_url(content.field_background_image['#items'].entity.uri.value) }}');background-repeat:no-repeat;background-size: cover;background-position: center top;"></div>
+	<div class="banner__content" style="color:{{content.field_text_color.0 }};">
+		<h2{{title_atributes}}>{{label}}</h2>
+		{{content['body']['0']['#text'] |raw}}
+	</div>
+</div>

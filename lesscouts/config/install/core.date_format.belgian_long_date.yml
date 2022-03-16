@@ -1,0 +1,10 @@
+uuid: 521b6542-ccc9-41f8-8383-86eb90784323
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: C7TkY0cDSDIobYVd_eEcba3ejhdTlywIBAhe3Mo8CYo
+id: belgian_long_date
+label: 'Belgian long date'
+locked: false
+pattern: 'l, j F Y - H:i'

@@ -1,0 +1,27 @@
+uuid: 8de03708-1721-4cb6-9c4f-5f1775f2ab7e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - lesscouts
+_core:
+  default_config_hash: a0BhUedp3o7LoQkQxRJDpn8Z3g3uFw6oAzxLezvgWCs
+id: lesscouts_account_menu
+theme: lesscouts
+region: navigation_collapsible
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

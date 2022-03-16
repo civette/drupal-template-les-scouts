@@ -1,0 +1,27 @@
+uuid: c8c5b969-5554-4be7-85ba-b90a93bde804
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - lesscouts
+_core:
+  default_config_hash: eExE5bdP-2Mv9QqOK1C1PlsCkBzuNU_3VEXZUHl4IF4
+id: lesscouts_main_menu
+theme: lesscouts
+region: navigation_collapsible
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Navigation principale'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

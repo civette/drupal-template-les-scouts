@@ -1,0 +1,21 @@
+uuid: 9c2fcf86-600a-4f6f-acd9-c542249a17c5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_text_color
+field_name: field_text_color
+entity_type: block_content
+type: string
+settings:
+  max_length: 7
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

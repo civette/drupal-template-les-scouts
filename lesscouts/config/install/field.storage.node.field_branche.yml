@@ -1,0 +1,38 @@
+uuid: 99eccf18-a0b7-4eaf-88e9-50b218e51e50
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: Opo4iXEx_8w62ZVzJKujvfzJ0Ysrmaj6XZAEEFfJhlU
+id: node.field_branche
+field_name: field_branche
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Baladins
+      label: Baladins
+    -
+      value: Louveteaux
+      label: Louveteaux
+    -
+      value: Eclaireurs
+      label: Eclaireurs
+    -
+      value: Pionniers
+      label: Pionniers
+    -
+      value: Route
+      label: Route
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,31 @@
+uuid: c2c08ab5-1873-4cbf-98c1-d5e7ee0919e9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.reunion
+    - node.type.section
+_core:
+  default_config_hash: EP8EH40sIPpzvO1XEAe_wd_ekXxeEcbcIuCBH18MamI
+id: node.reunion.field_section
+field_name: field_section
+entity_type: node
+bundle: reunion
+label: Section
+description: 'Section concernée par l''activité. Liste les options possible parmi les contenu de type "Section"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      section: section
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

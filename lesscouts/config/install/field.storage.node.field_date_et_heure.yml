@@ -1,0 +1,22 @@
+uuid: 3edda36c-6882-48b9-ac8b-7002c242a054
+langcode: fr
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+_core:
+  default_config_hash: yeOMYvE08Cjlnlo4AJ9v2FxJW9T_aMAdJSpZhF-aDHc
+id: node.field_date_et_heure
+field_name: field_date_et_heure
+entity_type: node
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

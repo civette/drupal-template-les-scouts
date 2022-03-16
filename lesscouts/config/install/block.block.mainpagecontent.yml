@@ -1,0 +1,22 @@
+uuid: 1657a368-c6af-4c08-b326-d0bc929b7bea
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lesscouts
+_core:
+  default_config_hash: 7DFHKLaz7rluUaOHdBeIiebpzCc6fJw02h7FPwsdJvI
+id: mainpagecontent
+theme: lesscouts
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: visible
+  provider: system
+visibility: {  }

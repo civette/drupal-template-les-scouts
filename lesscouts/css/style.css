@@ -1,0 +1,292 @@
+/**
+ * If using a CSS pre-processor, tell it to overwrite this file. If not, place
+ * your custom CSS modifications here.
+ */
+
+/** Couleurs de la charte graphique Les Scouts  */
+:root {
+	--ls-vert-base: rgb(149, 193, 31);
+	--ls-vert-fonce: rgb(48, 74, 60);
+	--ls-bleu-fonce: rgb(10, 66, 117);
+	--ls-prune: rgb(78, 29, 79);
+	--ls-orange: rgb(239, 123, 0);
+	--ls-gris: rgb(128, 154, 175);
+	--ls-turquoise: rgb(43, 153, 164);
+	--ls-bleu-clair: rgb(21, 173, 234);
+	--ls-rouge: rgb(214, 15, 60);
+	--ls-rose: rgb(224, 63, 123);
+	--ls-baladins: rgb(0, 160, 222);
+	--ls-louveteaux: rgb(41, 111, 82);
+	--ls-eclaireurs: rgb(0, 79, 159);
+	--ls-pionniers: rgb(213, 19, 23);
+	--ls-mondial: rgb(98, 37, 153);
+	--ls-blanc: rgb(255, 255, 255);
+	--ls-noir: rgb(0, 0, 0);
+	
+	--ls-body-bg: rgb(10, 66, 117);
+	
+	--ls-text-on-dark: rgb(242, 245, 248);
+	--ls-text-on-clear: rgb(51, 48, 0)
+	
+	--primary: --ls-bleu-fonce;
+	
+	font-size: 16px;
+	--bs-body-font-size: 1rem;
+	--bs-body-font-weight: 700;
+}
+
+/* spacing stuff if used in tempaltes twigs*/
+.pr-0 {
+    padding-right: 0rem;
+}
+.pl-0 {
+    padding-left: 0rem;
+}
+.mAll-0 {
+	margin:0rem;
+}
+.mt-0 {
+    margin-top: 0rem;
+}
+.mb-0 {
+    margin-bottom: 0rem;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mt-5 {
+    margin-top: 3rem;
+}
+.mb-5 {
+    margin-bottom: 3rem;
+}
+.pt-5 {
+    padding-top: 3rem;
+}
+.pb-5 {
+    padding-bottom: 3rem;
+}
+
+
+/* fonts related */
+@font-face {
+  font-family: "M";
+  src: url('/fonts/Muli/Muli-Regular.ttf');
+}
+
+/* width */
+@media screen and (min-width: 1400px)
+.navbar.container,
+.navbar.container-fluid {
+    max-width: 1320px;
+}
+/* 1340px runs smoothly with col-lg-9 of .region-highlighted region */
+@media screen and (max-width: 1340px) {
+    .ls-topping-right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px)
+.navbar.container,
+.navbar.container-fluid {
+    max-width: 940px;
+}
+
+@media screen and (min-width: 768px)
+.navbar.container,
+.navbar.container-fluid {
+    max-width: 720px;
+}
+
+/*** tags and styles***/
+/* global things */
+body {
+	background-color: var(--ls-body-bg);
+	margin-top: 0px;
+	font-family: 'Muli', sans-serif;
+	font-size: var(--bs-body-font-size);
+}
+
+.main-container h1,.main-container  h2,.main-container h3,.main-container h4,.main-container h5,.main-container h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.main-container h1 > a,.main-container  h2 > a,.main-container  h3 > a,.main-container  h4 > a,.main-container  h5 > a,.main-container  h6 > a {
+    font-weight: 700;
+	color: var(--ls-bleu-fonce);
+}
+
+/* menus related */
+#block-lesscouts-main-menu > ul a,
+#block-lesscouts-main-menu > ul a.active,
+#block-lesscouts-account-menu > ul a {
+	color: var(--ls-bleu-fonce);
+	font-weight: var(--bs-body-font-weight);
+}
+
+#block-lesscouts-main-menu .menu--main--container,
+#block-lesscouts-account-menu  .menu--main--container {
+	text-align: center;
+    position: relative;
+}
+
+#block-lesscouts-main-menu > ul,
+#block-lesscouts-account-menu > ul {
+	position: relative;
+    color: var(--ls-body-bg);
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(50%);
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/* navigation region*/
+.navbar {
+	margin-bottom: 1rem;
+}
+
+.navbar-default {
+    background-color: var(--ls-text-on-dark);
+    border-color: var(--ls-text-on-dark);
+}
+
+.dialog-off-canvas-main-canvas {
+	background-color: var(--ls-text-on-dark);
+}
+
+/* highlighted region*/
+#highlighted,
+#footer {
+	background-color: var(--ls-bleu-fonce);
+	color: var(--ls-text-on-dark);
+}
+
+#highlighted a {
+	color: var(--ls-text-on-dark);
+	text-decoration: underline;
+}
+#highlighted a:hover {
+	text-decoration: underline;
+}
+  
+
+#highlighted > .ls-topping-right::before {
+	content: url("../images/toppings/topping_Federation_blanc_400.png");
+	float: right;
+	position: absolute;
+	right: 0;
+	padding-top: 3rem;
+	z-index:1;	
+}
+
+#highlighted .ls-navbar-highlighted {
+	float: none;
+}
+
+/* content region*/
+.region-content h1,.region-content h2,.region-content h3,.region-content h4,.region-content h5,.region-content h6,
+.region-content h1 > a,.region-content  h2 > a,.region-content  h3 > a,.region-content  h4 > a,.region-content  h5 > a,.region-content  h6 > a {
+    font-weight: 700;
+}
+/* footer region*/
+.footer, .footer_first, .footer_second, .footer_second, .footer_fourth {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top: 0px
+}
+
+footer .block-block-content:first-of-type h2:first-of-type {
+	margin-top:0rem;
+}
+
+/* banner region*/
+.banner {
+	text-align:center;
+	position:relative;
+	overflow: hidden;
+	height: 440px;
+}
+
+.banner > .banner__bg {
+	position: absolute;
+	width:100%;
+	height:140%;
+	background-size: cover;
+	background-position: center top;
+	background-repeat:no-repeat;
+}
+
+.banner > .banner__content {
+	position:relative;
+	color: var(--ls-body-bg);
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/* Sections */
+.block-views-blocknos-sections-block-1 .section {
+   padding:1rem;
+}
+.section--title {
+	text-align:center;
+	padding:1rem;	
+}
+
+/* Baladins */
+	.Baladins {
+		border-color: var(--ls-pionniers);
+		/* background-image: url("../images/toppings/topping_Baladins_bleu_400.png"); */
+	}
+	.Baladins .section--title {
+		margin-top: 0rem;
+		background-color: var(--ls-baladins);
+	}
+	.Baladins .section--title > a {
+		color: var(--ls-text-on-dark);
+	}
+/* Louveteaux */
+	.Louveteaux {
+		border-color: var(--ls-pionniers);
+		/* background-image: url("../images/toppings/topping_Louveteaux_vert_400.png"); */
+	}
+	.Louveteaux .section--title {
+		margin-top: 0rem;
+		background-color: var(--ls-louveteaux);
+	}
+	.Louveteaux .section--title > a {
+		color: var(--ls-text-on-dark);
+	}
+/* Eclaireurs */
+	.Eclaireurs {
+		border-color: var(--ls-eclaireurs);
+		/* background-image: url("../images/toppings/topping_Eclaireurs_bleu_400.png"); */
+	}
+	.Eclaireurs .section--title {
+		margin-top: 0rem;
+		background-color: var(--ls-eclaireurs);
+	}
+	.Eclaireurs .section--title > a {
+		color: var(--ls-text-on-dark);
+	}
+/* Pionniers */
+	.Pionniers {
+		border-color: var(--ls-pionniers);
+		/* background-image: url("../images/toppings/topping_Pionniers_rouge_400.png"); */
+	}
+	.Pionniers .section--title {
+		margin-top: 0rem;
+		background-color: var(--ls-pionniers);
+	}
+	.Pionniers .section--title > a {
+		color: var(--ls-text-on-dark);
+	}

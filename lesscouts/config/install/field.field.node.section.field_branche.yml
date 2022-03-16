@@ -1,0 +1,23 @@
+uuid: fef917d1-410f-46db-9baf-29027ffecd4c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_branche
+    - node.type.section
+  module:
+    - options
+_core:
+  default_config_hash: CcVq9Kz05DdIxG-BpU9CHXxBTDYuN7dRev21VBCPhfQ
+id: node.section.field_branche
+field_name: field_branche
+entity_type: node
+bundle: section
+label: Branche
+description: 'Branche de la section'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

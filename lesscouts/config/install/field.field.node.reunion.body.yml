@@ -1,0 +1,25 @@
+uuid: cfa10591-d77c-43a3-a326-2ef0f4d34934
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.reunion
+  module:
+    - text
+_core:
+  default_config_hash: l19hjJ5CtPwaZ-AMye4cG5RiewcFLo0oZS4PKnTOSjA
+id: node.reunion.body
+field_name: body
+entity_type: node
+bundle: reunion
+label: Body
+description: 'Corps de texte destiné à recevoir la description de l''activité'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,26 @@
+uuid: e3416399-dead-40ab-8a3f-170b0b3477df
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.nos_sections
+  module:
+    - views
+  theme:
+    - lesscouts
+_core:
+  default_config_hash: gyvCzJOu3DxGwYM6_zEZ9nN2TdEJ2MxyDF0bbFplNgI
+id: views_block__nos_sections_block_1
+theme: lesscouts
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:nos_sections-block_1'
+settings:
+  id: 'views_block:nos_sections-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

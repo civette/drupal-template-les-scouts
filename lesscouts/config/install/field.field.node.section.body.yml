@@ -1,0 +1,25 @@
+uuid: df532368-77fd-4b12-b567-dec112a25370
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.section
+  module:
+    - text
+_core:
+  default_config_hash: mJZhxppctQ_efXDC7NlNPjGvB3rqGgffFBd_mKTu2hk
+id: node.section.body
+field_name: body
+entity_type: node
+bundle: section
+label: Body
+description: 'Descriptif de la section'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

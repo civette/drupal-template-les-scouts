@@ -1,0 +1,21 @@
+uuid: bb7aeaef-2eb1-47e0-968c-e015da01236c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.storage.block_content.field_text_color
+id: block_content.banner_block.field_text_color
+field_name: field_text_color
+entity_type: block_content
+bundle: banner_block
+label: 'Text color'
+description: 'Couleur dans laquelle apparaitra le texte. A changer pour avoir une bonne lisibilité sur votre image. Doit être au format hex (#ffd000 par exemple)'
+required: false
+translatable: false
+default_value:
+  -
+    value: '#ffd000'
+default_value_callback: ''
+settings: {  }
+field_type: string

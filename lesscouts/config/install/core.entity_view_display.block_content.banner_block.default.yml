@@ -1,0 +1,45 @@
+uuid: e936cd3d-a7f6-4110-95df-5e08597e9e3f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_block
+    - field.field.block_content.banner_block.body
+    - field.field.block_content.banner_block.field_background_image
+    - field.field.block_content.banner_block.field_text_color
+  module:
+    - image
+    - text
+_core:
+  default_config_hash: Ozn4SsN14G317jnHEd7xcDqnOQDQZ4b_-1DCwXIQnLo
+id: block_content.banner_block.default
+targetEntityType: block_content
+bundle: banner_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_background_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text_color:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,51 @@
+uuid: cae6d4ac-10a3-4920-af8f-5115f1e78726
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.section.body
+    - field.field.node.section.field_branche
+    - field.field.node.section.field_image_de_la_section
+    - node.type.section
+  module:
+    - image
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: OX6v9jzBKuLD1O5wzIhk4C06XQZrkmmfrH11aoGCXMc
+id: node.section.default
+targetEntityType: node
+bundle: section
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_branche:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_de_la_section:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

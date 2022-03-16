@@ -1,0 +1,27 @@
+uuid: dc5b5437-e0bd-4c5f-955e-7be7ceafd5c0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - lesscouts
+_core:
+  default_config_hash: bxY5c72HUmGFXXXFGfUPtArBQlI2w-1rq9MIMxN03KI
+id: lesscouts_footer
+theme: lesscouts
+region: footer_third
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Menu Pied de page'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 11565a54-54e8-49b5-949c-85f14302e3f6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adresse
+    - node.type.reunion
+_core:
+  default_config_hash: 3xYVAqbtDsbB9ITec3vmRwIWjz5LOeJs9ukZ0evlBNc
+id: node.reunion.field_adresse
+field_name: field_adresse
+entity_type: node
+bundle: reunion
+label: Adresse
+description: 'Ce champ est destiné à recevoir l''adresse où commence l''activité. Il est recommendé de changer la valeur par défaut par ce qui est le plus habituel (le local probablement).'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Adresse par défaut, à changer dans le type de contenu'
+default_value_callback: ''
+settings: {  }
+field_type: string

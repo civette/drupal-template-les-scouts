@@ -1,0 +1,20 @@
+uuid: 2d9a5607-f66a-43b2-b0fd-2b4b73c30610
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - lesscouts
+_core:
+  default_config_hash: ZI5InT9-Ieo8V5AUlUDq-ZXdA1zkztW9i2DpAwO8cWw
+id: pagetitle
+theme: lesscouts
+region: content
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
