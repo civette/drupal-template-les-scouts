@@ -10,17 +10,6 @@
 /**
 * Implements hook_preprocess_HOOK() for block templates.
 */
-/** Using png as logo image */
-function lesscouts_preprocess_block(&$variables) {
-	switch ($variables['base_plugin_id']) {
-		case 'system_branding_block':  
-			$variables['site_logo'] = '';
-			if ($variables['content']['site_logo']['#access'] && $variables['content']['site_logo']['#uri']) {
-				$variables['site_logo'] = str_replace('.svg', '.png', $variables['content']['site_logo']['#uri']);
-			}
-		break;
-	}
-}
 
 /** Altering block suggestions in DEBUG */
 function lesscouts_theme_suggestions_block_alter(array &$suggestions, array $variables) {
